@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Weather Information - Container 2</name>
+        <order>2</order>
+        <semantic_tag/>
+        <sp_page display_value="weather_information">c3f8cec147020210e8610b02d16d437b</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-18 05:47:59</sys_created_on>
+        <sys_id>70e9c5d683089210807eb8a6feaad35c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weather Information - Container 2</sys_name>
+        <sys_package display_value="ChatGPT" source="x_804188_chatgpt">d9f177bc47c20210e8610b02d16d43c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ChatGPT">d9f177bc47c20210e8610b02d16d43c9</sys_scope>
+        <sys_update_name>sp_container_70e9c5d683089210807eb8a6feaad35c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-18 05:47:59</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ChatGPT">d9f177bc47c20210e8610b02d16d43c9</application>
+        <file_path/>
+        <instance_id>e074221f1bf08698c8432f8dee4bcba7</instance_id>
+        <instance_name>dev241591</instance_name>
+        <name>sp_container_70e9c5d683089210807eb8a6feaad35c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Weather Information - Container 2</name><order>2</order><semantic_tag/><sp_page display_value="weather_information">c3f8cec147020210e8610b02d16d437b</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-18 05:47:59</sys_created_on><sys_id>70e9c5d683089210807eb8a6feaad35c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Weather Information - Container 2</sys_name><sys_package display_value="ChatGPT" source="x_804188_chatgpt">d9f177bc47c20210e8610b02d16d43c9</sys_package><sys_policy/><sys_scope display_value="ChatGPT">d9f177bc47c20210e8610b02d16d43c9</sys_scope><sys_update_name>sp_container_70e9c5d683089210807eb8a6feaad35c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-18 05:47:59</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>2015906003</payload_hash>
+        <record_name>Weather Information - Container 2</record_name>
+        <reverted_from/>
+        <source>4679011283089210807eb8a6feaad320</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-18 05:47:59</sys_created_on>
+        <sys_id>30e9c5d683089210807eb8a6feaad35e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191640732f50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-18 05:47:59</sys_updated_on>
+        <type>Container</type>
+        <update_guid>34e9c5d628089210df9ebffbadcf025d</update_guid>
+        <update_guid_history>34e9c5d628089210df9ebffbadcf025d:2015906003</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Weather Information - Container 2">02e9411a83089210807eb8a6feaad366</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-18 05:48:04</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>36c9a8f33589443d8eba9271498b0559</sys_id>
+        <sys_metadata>70e9c5d683089210807eb8a6feaad35c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Weather Information - Container 2</sys_name>
+        <sys_package display_value="ChatGPT" source="x_804188_chatgpt">d9f177bc47c20210e8610b02d16d43c9</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ChatGPT">d9f177bc47c20210e8610b02d16d43c9</sys_scope>
+        <sys_scope_delete display_value="">4f261b689dad4d08acd59ba95d2d4e91</sys_scope_delete>
+        <sys_update_name>sp_container_70e9c5d683089210807eb8a6feaad35c</sys_update_name>
+        <sys_update_version display_value="sp_container_70e9c5d683089210807eb8a6feaad35c">30e9c5d683089210807eb8a6feaad35e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-18 05:48:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

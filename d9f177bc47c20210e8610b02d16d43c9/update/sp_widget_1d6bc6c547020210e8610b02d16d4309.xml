@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	
+c.fetchWeather = function(latitude,longitude) {
+	
+	c.server.update();
+	
+	
+}
+
+};
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#widget {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ffcc80;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    color: #333333;
+   
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: inline-block;
+    width: 60px;
+    font-weight: bold;
+    color: #333333;
+    margin-right: 10px;
+  }
+
+  input {
+    display: inline-block;
+    width: calc(100% - 100px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0; /* Reset margin */
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+table{
+  
+  width : 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+tr{
+  background-color:white;
+}
+th{
+  
+  padding: 15px;
+  text-align: middle;
+  border: 1px solid;
+  background-color : #ffcc80;
+  
+ }
+
+td{
+  
+  padding: 15px;
+  text-align: middle;
+  border: 1px solid;
+ }
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Get Latitude Longitude</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+
+	if(input)
+	{
+	var record = new GlideRecord('x_804188_chatgpt_weather_details');
+	record.get('c52a015a83089210807eb8a6feaad361');
+	
+	record.latitude_longitude = input.latitude + "," + input.longitude;
+	record.update();
+	
+	var response = JSON.parse(record.weather_details);
+			
+
+	data.place_name = response['location']['name'];
+	data.country_name = response['location']['country'];
+  data.localtime = response['location']['localtime'];
+			
+	data.temprature_celcious = response['current']['temp_c'];
+	data.temprature_frenhite = response['current']['temp_f'];
+
+	data.humidity1 = response['current']['humidity'];
+	}
+	
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-07 03:17:09</sys_created_on>
+        <sys_id>1d6bc6c547020210e8610b02d16d4309</sys_id>
+        <sys_mod_count>125</sys_mod_count>
+        <sys_name>Get Latitude Longitude</sys_name>
+        <sys_package display_value="ChatGPT" source="x_804188_chatgpt">d9f177bc47c20210e8610b02d16d43c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ChatGPT">d9f177bc47c20210e8610b02d16d43c9</sys_scope>
+        <sys_update_name>sp_widget_1d6bc6c547020210e8610b02d16d4309</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-18 05:49:45</sys_updated_on>
+        <template><![CDATA[<div>
+<div id="widget">
+  <h2> Location Information</h2>
+  <div class="input-group">
+    <label for="latitude">Latitude:</label>
+    <input type="text" ng-model = "c.data.latitude" placeholder="Enter latitude">
+  </div>
+  
+  <div class="input-group">
+    <label for="longitude">Longitude:</label>
+    <input type="text" ng-model = "c.data.longitude" placeholder="Enter longitude">
+  </div>
+  <button ng-click = "c.fetchWeather(c.data.latitude,c.data.longitude)">Get Weather</button>
+</div>
+
+<div ng-if="data.place_name!=undefined">
+  <h2> Weather Information : </h2>
+  <table>
+
+  <tr>
+     <th>City</th>
+     <th>Country</th>
+    <th>Local Time/Date</th>
+    <th>Temperature(Celsius)</th>
+    <th>Temperature(Fahrenheit)</th>
+    <th>Humidity</th>
+  </tr>
+    <tr>
+     <td>{{data.place_name}}</td>
+     <td>{{data.country_name}}</td>
+    <td>{{data.localtime }}</td>
+    <td>{{data.temprature_celcious}}</td>
+    <td>{{data.temprature_frenhite}}</td>
+    <td>{{data.humidity1}}</td>
+  </tr>
+        
+  </table>
+  
+</div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="74634e118380d210807eb8a6feaad395" label="Chatgpt Weather Details" max_length="40" name="x_804188_chatgpt_weather_details" text_index="true" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Weather Details" max_length="10000" name="weather_details" type="string"/>
+        <element label="Latitude Longitude" max_length="40" name="latitude_longitude" type="string"/>
+    </element>
+</database>
