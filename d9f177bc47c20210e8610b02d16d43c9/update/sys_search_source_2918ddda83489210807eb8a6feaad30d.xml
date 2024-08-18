@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_source">
+    <sys_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_804188_chatgpt_weather_details">active=true</condition>
+        <group/>
+        <name>ChatGPT - x_804188_chatgpt_weather_details</name>
+        <roles/>
+        <source_table>x_804188_chatgpt_weather_details</source_table>
+        <sys_class_name>sys_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-18 06:50:01</sys_created_on>
+        <sys_id>2918ddda83489210807eb8a6feaad30d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ChatGPT - x_804188_chatgpt_weather_details</sys_name>
+        <sys_package display_value="ChatGPT" source="x_804188_chatgpt">d9f177bc47c20210e8610b02d16d43c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ChatGPT">d9f177bc47c20210e8610b02d16d43c9</sys_scope>
+        <sys_update_name>sys_search_source_2918ddda83489210807eb8a6feaad30d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-18 06:50:01</sys_updated_on>
+    </sys_search_source>
+    <sys_translated_text action="delete_multiple" query="documentkey=2918ddda83489210807eb8a6feaad30d"/>
+</record_update>

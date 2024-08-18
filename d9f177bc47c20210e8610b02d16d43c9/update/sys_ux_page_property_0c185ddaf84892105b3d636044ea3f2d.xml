@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Tabs Configuration</description>
+        <name>chrome_tab</name>
+        <page display_value="ChatGPT">84185ddaf2489210d49c68faf9e7503d</page>
+        <required_translations>[ {
+  "message" : "New Chatgpt Weather Details",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-18 06:49:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>0c185ddaf84892105b3d636044ea3f2d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="ChatGPT" source="x_804188_chatgpt">d9f177bc47c20210e8610b02d16d43c9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ChatGPT">d9f177bc47c20210e8610b02d16d43c9</sys_scope>
+        <sys_update_name>sys_ux_page_property_0c185ddaf84892105b3d636044ea3f2d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-18 06:50:01</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_804188_chatgpt.84185ddaf2489210d49c68faf9e7503d.root.global.chrome_tab</unique_name>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New Chatgpt Weather Details"},"routeInfo":{"route":"record","fields":{"table":"x_804188_chatgpt_weather_details","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_804188_chatgpt_weather_details","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=0c185ddaf84892105b3d636044ea3f2d"/>
+</record_update>
